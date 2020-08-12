@@ -1,0 +1,59 @@
+body {
+    margin:0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+header div {
+    background-color: teal;
+    height: 200px;
+}
+.one-on-one {
+    height: 320px;
+    background-color: brown;
+}
+.frame{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    
+}
+.box {
+    flex:0 0 25%;
+    width: 25%;
+    height: 100%;
+    background-color: tomato;
+    position: relative;
+   
+}
+.frame .box .face-1 {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(70, 10, 67);
+    transition: all 1s ease;
+    transform-origin:bottom;
+}
+
+.face-1 .image img {
+    width: 200px;
+    height: 200px;
+
+}
+.face-1 .text h2 ,.face-1 .text p {
+    margin : 12px auto;
+}
+ .frame .box .face-1:hover{
+    transform: translateY(-100%) rotateX(90deg) ;
+    background-color: rgb(179, 37, 12);
+}
+.face-2 {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: 0;
+    font-size: 25px;
+    background-color: white;
+}
